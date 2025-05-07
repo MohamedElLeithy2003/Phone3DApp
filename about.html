@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    .banner {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .navbar {
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    model-viewer {
+      width: 100%;
+      height: 60vh;
+      background: #000;
+      border-radius: 10px;
+    }
+    .controls button {
+      margin: 5px;
+    }
+    #descriptionBox {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">Home</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="iphone.html">Apple</a></li>
+        <li class="nav-item"><a class="nav-link" href="samsung.html">Samsung</a></li>
+        <li class="nav-item"><a class="nav-link" href="gpixel.html">Google</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+=
+<header>
+  <h1>About This 3D Phone Application</h1>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+  <section>
+    <h2>3D Model Construction and Development</h2>
+    <p>
+      The phone model in this application was built using simple geometric shapes in Blender 
+      for simple yet efficient performance. The main body of the phone was created 
+      using a scaled cube material, matching the phone's overall structure and shape. Small cubes and 
+      cylinders were combined to represent the buttons, carefully positioned along 
+      the edges to replicate real phone button placement.
+      <br><br>
+      Image textures were applied to the front and back faces of the phone with emission materials to display 
+      screen content and rear design, adding detail while keeping the model lightweight.
+    </p>
+  </section>
+
+  <section>
+    <h2>Animation and Interaction</h2>
+    <p>
+      All animations in this application are triggered through a single control button, 
+      allowing users to play the full sequence with one click. The animations were 
+      designed to run sequentially, ensuring each movement is demonstrated clearly without 
+      overlapping. This provides a smooth and organized user experience.
+      <br><br>
+      Users can also rotate, zoom, and explore the 3D model interactively using mouse or touch controls.
+    </p>
+  </section>
+
+  <section>
+    <h2>Design Choices</h2>
+    <p>
+      A clean design approach was followed to keep the focus on the 3D model with a sharp interface. 
+      The interface was built using HTML5, CSS3, and JavaScript, with the THREE.js library 
+      powering the 3D rendering. The layout is responsive, ensuring compatibility across various devices,
+      including desktops, tablets, and smartphones.
+      <br><br>
+      Animations and interactions were optimized, allowing users to engage with the model easily.
+    </p>
+  </section>
+
+  <section>
+    <h2>Shaders, Textures & Optimization</h2>
+    <p>
+      Basic material shaders were used with lighting effects to create a realistic appearance 
+      without heavy computational demands. Image textures were optimized on the phone's surfaces using emissions to
+      ensure fast loading times while maintaining visual quality.
+      <br><br>
+      Geometry was kept simple, using cubes and cylinders to minimize vertex count and enhance 
+      performance, even on devices with lower specifications.
+    </p>
+  </section>
+
+  <section>
+    <h2>Accessibility Considerations</h2>
+    <p>
+      The application includes keyboard-accessible controls with descriptive labels, making it 
+      usable for individuals who cannot rely on mouse input. High contrast colors are applied 
+      for improved readability.
+      <br><br>
+      Alternative text and descriptions are provided for key elements, enhancing compatibility 
+      with screen readers and supporting users with visual impairments.
+    </p>
+  </section>
+
+  <section>
+    <div class="container my-4">
+      <h2>Modeling Process Screenshots</h2>
+
+      <p>The screenshots below show the phone models with textures applied in Blender's Material Preview mode:</p>
+      <img src="media/samsungblender.png" alt="Phone Model Textured in Blender" style="max-width: 100%; height: auto; border: 2px solid #ccc;">
+      <img src="media/iphoneblender.png" alt="Phone Model Textured in Blender" style="max-width: 100%; height: auto; border: 2px solid #ccc;">
+      <img src="media/gpixelblender.png" alt="Phone Model Textured in Blender" style="max-width: 100%; height: auto; border: 2px solid #ccc;">
+    </div>
+  </section>
+
+  <section>
+    <div class="container my-4">
+      <h2>Model Animation Video</h2>
+      <p>Watch the videos below to see the model movements in action</p>
+      <video width="640" height="360" controls>
+      <source src="media/Samsung Animations.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      <video width="640" height="360" controls>
+        <source src="media/IPhone Animations.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+        </video>  
+       <video width="640" height="360" controls>
+        <source src="media/GPixel Animations.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <div id="about" class="container mt-5">
+      
+        <h3>Deeper Understanding Statement</h3>
+        <p>Throughout the development of this 3D app, I aimed to push the boundaries beyond the tutorial content and explore advanced 3D interactivity and dynamic content delivery. I extended the basic 3D object viewer by integrating user-triggered animations using JavaScript and custom <strong>three.js</strong> scenes. This allowed me to give users a more immersive experience, where actions like clicking on buttons would trigger animations that change the lighting, camera angle, and even play embedded video content.</p>
+      
+        <p>While initially focusing on static 3D models, I recognized the importance of optimizing them for performance. I encountered issues with large model file sizes, so I utilized <strong>GLTF</strong> format for better compression and faster load times. Additionally, I added a <strong>responsive design</strong> using <strong>Bootstrap</strong> to ensure the web app functions correcly across different.</p>
+      
+        <p>Throughout testing, a significant challenge I faced was embedding animations onto the webpage. As each model had multiple animations, only one animation was playing once clicking the buttons.
+           To address this, I combined all animation to play<strong>sequentially</strong> and adjusted key frames accordingly to ensure that animations do not overlap.</p>
+      
+        <p>I also integrated <strong>Three.js features</strong> including changing to wireframe view, toggling spotlight, and adjusting view angle to enhance user experience and improve interaction</p>
+    
+        <p>In conclusion, the web application not only enhances the user's ability to interact with 3D models but also provides a polished, user-friendly experience with backend support for dynamic content. This project has expanded my technical knowledge, particularly in web development, JavaScript interactivity, and backend integration.</p>
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

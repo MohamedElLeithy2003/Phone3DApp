@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Smartphone Showcase</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    .banner {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .navbar {
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    .card {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Banner -->
+<div class="banner">
+  <h1>Welcome to the 3D Smartphone Showcase</h1>
+  <p>Explore the latest smartphones from Apple, Samsung, and Google</p>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="apple.png" alt="Apple Logo" class="logo" /> Tech Showcase
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#apple">Apple</a></li>
+        <li class="nav-item"><a class="nav-link" href="#samsung">Samsung</a></li>
+        <li class="nav-item"><a class="nav-link" href="#google">Google</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Product Descriptions -->
+<div class="container text-center">
+  <h2>Featured Smartphones</h2>
+  <div class="row">
+
+    <!-- Apple -->
+    <div class="col-md-4" id="apple">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Apple iPhone</h4>
+          <p class="card-text">The latest Apple iPhone redefines performance and design with an elegant, powerful experience.</p>
+          <a href="iphone.html" class="btn btn-primary">View in 3D</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Samsung -->
+    <div class="col-md-4" id="samsung">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Samsung Galaxy</h4>
+          <p class="card-text">Explore the futuristic Samsung Galaxy with a cutting-edge display and unmatched camera tech.</p>
+          <a href="samsung.html" class="btn btn-primary">View in 3D</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google -->
+    <div class="col-md-4" id="google">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Google Pixel</h4>
+          <p class="card-text">Google Pixel brings powerful AI features, clean design, and stunning photography into your hands.</p>
+          <a href="gpixel.html" class="btn btn-primary">View in 3D</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

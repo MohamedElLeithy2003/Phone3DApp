@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* 3D Scene Container */
+#scene-container {
+  width: 80%;
+  height: 500px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  background-color: #000;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Button Container */
+#button-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Text Box for Descriptions */
+#description-box {
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  width: 70%;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#description-box p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #scene-container {
+    width: 95%;
+    height: 300px;
+  }
+
+  #button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #description-box {
+    width: 90%;
+  }
+}

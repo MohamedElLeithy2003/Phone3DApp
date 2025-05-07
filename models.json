@@ -1,0 +1,16 @@
+{
+  "models": [
+    {
+      "name": "Samsung Galaxy S25 Ultra",
+      "description": "Experience the pinnacle of mobile photography with the Samsung Galaxy S25 Ultra. Its groundbreaking 200MP main camera captures breathtaking detail and clarity, allowing for incredible zoom capabilities and stunning low-light performance. Immerse yourself in vibrant visuals on the expansive 6.8-inch Dynamic AMOLED 2X display, boasting a smooth 120Hz refresh rate for fluid scrolling and gaming. Powered by the latest generation processor, the S25 Ultra delivers exceptional speed and efficiency for all your demanding tasks. Its sleek design, coupled with a long-lasting battery, makes it the ultimate companion for power users and photography enthusiasts alike."
+    },
+    {
+      "name": "Apple iPhone 16",
+      "description": "Introducing the Apple iPhone 16, where elegance meets cutting-edge technology. Capture life's moments with stunning clarity using its advanced 48MP main camera, capable of capturing incredible detail and vibrant colors. The immersive 6.7-inch Super Retina XDR display offers exceptional brightness and color accuracy, bringing your content to life. Driven by the next-generation A-series chip, the iPhone 16 delivers lightning-fast performance and seamless multitasking. Its refined design, enhanced durability, and the intuitive iOS ecosystem provide a premium user experience. Expect a leap forward in battery efficiency and innovative new features that seamlessly integrate into your daily life."
+    },
+    {
+      "name": "Google GPixel 9 Pro",
+      "description": "Meet the Google Pixel 9 Pro, designed to deliver an unparalleled experience powered by Google's innovative AI. Its sophisticated camera system, headlined by a 50MP main sensor, captures exceptional image quality with renowned Pixel computational photography, including impressive low-light capabilities and unique software features. Enjoy a vibrant and smooth visual experience on the 6.7-inch OLED display. The Pixel 9 Pro is expected to feature the latest Google Tensor processor, offering enhanced performance and advanced AI functionalities, such as improved voice recognition and intelligent assistance. With its clean interface and timely updates, the Pixel 9 Pro offers a seamless and intelligent smartphone experience."
+    }
+  ]
+}
